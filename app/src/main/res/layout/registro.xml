@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    android:gravity="center"
+    tools:context=".RegistroActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/borde"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/nombreapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ChangeCar"
+                android:textAlignment="center"
+                android:textColor="@color/morado"
+                android:textColorLink="@color/morado"
+                android:textSize="34sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="197dp"
+                android:src="@drawable/log_in" />
+
+            <EditText
+                android:id="@+id/registrousuario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/borde"
+                android:ems="10"
+                android:hint="    Usuario"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/registropssw"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borde"
+                android:ems="10"
+                android:hint="    Contraseña"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/registroname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borde"
+                android:ems="10"
+                android:hint="    Nombre"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/registrolastname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borde"
+                android:ems="10"
+                android:hint="    Apellidos"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/registromovil"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borde"
+                android:ems="10"
+                android:hint="    Telefono Movil"
+                android:inputType="number"
+                android:maxLength="9"/>
+
+            <Button
+                android:id="@+id/btnregistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Regístrate"
+                android:textSize="20sp"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

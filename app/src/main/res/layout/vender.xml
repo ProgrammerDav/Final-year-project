@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Card principal -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="30dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false"
+            app:cardElevation="5dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Campos obligatorios -->
+                <EditText
+                    android:id="@+id/regmarca"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/borde"
+                    android:layout_height="50dp"
+                    android:hint="  Marca"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/regmodelo"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/borde"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="  Modelo"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/regcolor"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/borde"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="  Color"
+                    android:inputType="text"/>
+
+                <EditText
+                    android:id="@+id/regpuertas"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/borde"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="  Número de puertas"
+                    android:inputType="number"
+                    android:maxLength="1"/>
+
+                <EditText
+                    android:id="@+id/regcaballos"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/borde"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="  Caballos"
+                    android:inputType="number"
+                    android:maxLength="9"/>
+
+                <EditText
+                    android:id="@+id/regkilometraje"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/borde"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="  Kilometraje"
+                    android:inputType="number"
+                    android:maxLength="9"/>
+
+                <EditText
+                    android:id="@+id/regantiguedad"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/borde"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="  Antigüedad"
+                    android:inputType="text"
+                    android:maxLength="10"/>
+
+                <EditText
+                    android:id="@+id/regprecio"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/borde"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="  Precio (€)"
+                    android:inputType="number"
+                    android:maxLength="9"/>
+
+                <!-- Botón para desplegar opcionales -->
+                <Button
+                    android:id="@+id/btnmodificaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Mostrar modificaciones" />
+
+                <!-- Sección opcional (inicialmente oculta) -->
+                <LinearLayout
+                    android:id="@+id/layoutModificaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/regm_suspension"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/borde"
+                        android:layout_height="50dp"
+                        android:hint="  Suspensión" />
+
+                    <EditText
+                        android:id="@+id/regm_motor"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/borde"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="  Motor" />
+
+                    <EditText
+                        android:id="@+id/regm_escape"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/borde"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="  Tubo de escape" />
+
+                    <EditText
+                        android:id="@+id/regm_llantas"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/borde"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="  Llantas" />
+
+                    <EditText
+                        android:id="@+id/regm_luces"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/borde"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="  Luces" />
+
+                    <EditText
+                        android:id="@+id/regm_antivuelco"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/borde"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="  Antivuelco" />
+
+                    <EditText
+                        android:id="@+id/regm_remolque"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/borde"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="  Remolque" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnguardar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Guardar vehículo" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
